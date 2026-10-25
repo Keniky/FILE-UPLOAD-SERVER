@@ -1,4 +1,3 @@
-import React from 'react'
 import arrowToRight from '../assets/arrow-point-to-right.svg'
 
 const ClickHere = () => {
