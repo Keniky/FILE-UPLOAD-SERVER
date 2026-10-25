@@ -19,4 +19,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(staticFilesPath, "index.html"));
 })
 
-app.listen(PORT)
+app.listen(80, "0.0.0.0", () => {
+    console.log("somebody entered your website");
+})

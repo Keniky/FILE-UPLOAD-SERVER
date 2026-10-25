@@ -4,7 +4,7 @@ to build the front end run this command :
 
 and to run the project just write : 
                 npm install
-                npm run dev
+                sudo npm run dev
 
 thats it like this you can share files to your other pc using a web interface without you needing anything else
 
