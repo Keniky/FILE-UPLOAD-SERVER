@@ -24,6 +24,9 @@ const Upload = () => {
                     
                     if( res.status === 200 ){
                         toast.success("upload succeded")
+                    }else{
+                        console.log("failed to upload server")
+                        toast.error("Could not reach server")
                     } 
                 }catch(error){
                     console.log(error)
@@ -46,11 +49,13 @@ const Upload = () => {
 
     return (
         <>
+
         <FileUploader 
             name="file"
             types={fileTypes}
             onDrop={handleDrop}
             onTypeError={handleTypeError}
+            handleChange={handleDrop}
             
             />
             <Toaster/>
